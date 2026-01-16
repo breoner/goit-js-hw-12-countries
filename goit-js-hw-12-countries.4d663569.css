@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #2c2c2c;
+  background: linear-gradient(135deg, #eef2f3, #d9e2ec);
+  margin: 0;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  box-shadow: 0 10px 30px #0000001a;
+}
+
+.data-input {
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 16px 18px;
+  font-size: 18px;
+  transition: border-color .3s, box-shadow .3s;
+}
+
+.data-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px #4f46e533;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list .item {
+  cursor: pointer;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color .25s, transform .2s;
+}
+
+.list .item:hover {
+  background-color: #e0e7ff;
+  transform: translateX(6px);
+}
+
+.success-box {
+  margin-top: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  display: flex;
+}
+
+.box-one {
+  flex: 1;
+  min-width: 260px;
+}
+
+.box-one h3, .box-one h4 {
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.capital, .population, .launguege {
+  font-weight: 600;
+}
+
+.capital span, .population span {
+  margin-left: 6px;
+  font-weight: 400;
+}
+
+.list-laun {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.list-laun li {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.img {
+  border-radius: 12px;
+  width: 320px;
+  max-width: 100%;
+  box-shadow: 0 6px 18px #00000026;
+}
+
+@media (width <= 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=goit-js-hw-12-countries.4d663569.css.map */
