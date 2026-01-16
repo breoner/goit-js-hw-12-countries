@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #d9e2ec);
+    color: #2c2c2c;
+}
+
+.box {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.data-input {
+    width: 100%;
+    padding: 16px 18px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #d0d7de;
+    outline: none;
+    margin-bottom: 30px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.data-input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list .item {
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    background-color: #f8fafc;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.2s;
+}
+
+.list .item:hover {
+    background-color: #e0e7ff;
+    transform: translateX(6px);
+}
+
+
+.success-box {
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.wrap {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-one {
+    flex: 1;
+    min-width: 260px;
+}
+
+.box-one h3,
+.box-one h4 {
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+
+.capital,
+.population,
+.launguege {
+    font-weight: 600;
+}
+
+.capital span,
+.population span {
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+.list-laun {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.list-laun li {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+
+.img {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
